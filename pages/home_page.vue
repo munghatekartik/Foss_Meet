@@ -27,9 +27,15 @@
     export default {
         data() {
             const data = [
-                    {'isbn_no':'4289', 'name':'srjk', 'image':'jrg'},
-                    {'isbn_no':'4289457', 'name':'dht', 'image':'jrg'},
-                    {'isbn_no':'4457289', 'name':'jkdth', 'image':'jrg'}
+                    {'unique_id':'23445', 'isbn_no':'4289', 'name':'srjk', 'image':'jrg'},
+                    {'unique_id':'23445', 'isbn_no':'4289457', 'name':'dht', 'image':'jrg'},
+                    {'unique_id':'23445', 'isbn_no':'4457289', 'name':'jkdth', 'image':'jrg'},
+                    {'unique_id':'23445','isbn_no':'4289', 'name':'srjk', 'image':'jrg'},
+                    {'unique_id':'23445','isbn_no':'4289457', 'name':'dht', 'image':'jrg'},
+                    {'unique_id':'23445','isbn_no':'4457289', 'name':'jkdth', 'image':'jrg'},
+                    {'unique_id':'23445','isbn_no':'4289', 'name':'srjk', 'image':'jrg'},
+                    {'unique_id':'23445','isbn_no':'4289457', 'name':'dht', 'image':'jrg'},
+                    {'unique_id':'23445','isbn_no':'4457289', 'name':'jkdth', 'image':'jrg'},
                 ]
             return {
                 
@@ -37,6 +43,10 @@
                 checkboxPosition: 'right',
                 checkedRows: [],
                 columns: [
+                    {
+                        field: 'unique_id',
+                        label: 'Unique user id',
+                    },
                     {
                         field: 'isbn_no',
                         label: 'ISBN NO',
